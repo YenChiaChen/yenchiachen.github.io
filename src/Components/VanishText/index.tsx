@@ -6,7 +6,7 @@ export const VanishText = () => {
         <AnimatedText
           phrases={[
             "ML ENGINEER",
-            "FULL-STACK ENGINEER",
+            "FULL-STACK",
             "DESIGNER",
             "TENNIS PLAYER"
           ]}

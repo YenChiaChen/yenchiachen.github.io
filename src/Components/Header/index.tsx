@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 export const SimpleFloatingNav = () => {
   return (
-    <nav className="fixed left-[50%] top-8 flex w-fit -translate-x-[50%] items-center gap-16 rounded-lg  p-2 text-md text-black">
+    <nav className="fixed left-[5%] bottom-[5%] bg-white  flex w-fit items-center gap-8 rounded-lg  p-6 shadow-md text-md text-black font-black z-10">
 
       <NavLink>HOME</NavLink>
       <NavLink>PROJECTS</NavLink>
@@ -19,7 +19,6 @@ interface NavLinkProps{
 
 const NavLink: React.FC<NavLinkProps> = ({ children }) => {
   return (
-    // eslint-disable-next-line jsx-a11y/anchor-is-valid
     <a href="#" rel="nofollow" className="block overflow-hidden">
       <motion.div
         whileHover={{ y: -20 }}
@@ -27,7 +26,7 @@ const NavLink: React.FC<NavLinkProps> = ({ children }) => {
         className="h-[20px]"
       >
         <span className="flex h-[20px] items-center">{children}</span>
-        <span className="flex h-[20px] items-center font-bold">
+        <span className="flex h-[20px] items-center text-orange-500">
           {children}
         </span>
       </motion.div>
